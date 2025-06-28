@@ -1,0 +1,123 @@
+El orden que DEBES seguir es el que te indica TU TAREA:
+
+1.  Conoce el conjunto de datos:
+    En esta primera etapa, te vas a familiarizar con tu
+    1. Dataset, que es tu colección completa de información,
+    la base sobre la cual trabajarás. Deberás explorar las
+    2. Columnas/Variables/Características, que son los distintos
+    tipos de información que tienes para cada registro (por
+    ejemplo, el nombre del cliente, la edad, el servicio
+    contratado, o la facturación mensual). Es fundamental
+    verificar los 3. Tipos de Datos de cada una de estas
+    columnas (es decir, si la información guardada es texto,
+    un número, una fecha, un valor booleano como Verdadero/Falso,
+    etc.) y, si lo tienes, consultar el 4. Diccionario de Datos,
+    que actúa como un manual explicando el significado exacto
+    y el propósito de cada variable. Todo este proceso inicial
+    es una forma de 5. Análisis Inicial / Exploración de Datos
+    (EDA), donde das un primer vistazo profundo para comprender
+    qué información contienen tus datos, cómo están estructurados,
+    identificar patrones generales y decidir qué columnas son
+    las más relevantes para el análisis de la evasión de clientes.
+
+2.  Comprobación de incoherencias en los datos:
+    Una vez que entiendes tus datos, el siguiente paso es la
+    "Comprobación de incoherencias". Aquí aplicarás el concepto
+    de 6. Limpieza de Datos (Data Cleaning), que consiste en el
+    proceso de identificar errores, datos incompletos o
+    incorrectos que puedan afectar la calidad de tu análisis.
+    Específicamente, prestarás atención a:
+    * Valores Ausentes (Missing Values): "Huecos" o celdas
+      vacías donde debería haber información.
+    * Datos Duplicados: Filas o registros idénticos que
+      aparecen más de una vez.
+    * Errores de Formato: Datos que no siguen un estándar
+      esperado, como fechas escritas de múltiples maneras o
+      números que el sistema interpreta como texto.
+    * Inconsistencias en las Categorías: Cuando una misma
+      respuesta o categoría se escribe de diferentes formas
+      (por ejemplo, "Sí", "si", "SÍ", "Yes", todas deberían
+      significar lo mismo pero son distintas para la
+      computadora).
+
+3.  Manejo de inconsistencias:
+    Tras identificar los problemas, llega el momento del
+    "Manejo de inconsistencias". Este paso se relaciona
+    directamente con el concepto 7. Manejo de Inconsistencias,
+    que son las acciones concretas que realizas para corregir
+    los problemas que encontraste en la etapa anterior. El
+    objetivo es ajustar los datos, por ejemplo, rellenando
+    valores ausentes de forma inteligente, eliminando duplicados,
+    estandarizando formatos (como el de las fechas) y unificando
+    las categorías inconsistentes para asegurarte de que tus
+    datos estén completos, sean coherentes y estén listos para
+    las siguientes etapas del análisis.
+
+4.  Columna de cuentas diarias:
+    Ahora que los datos están más limpios, te enfocarás en la
+    "Columna de cuentas diarias". Esta tarea es un ejemplo de
+    8. Transformación de Datos, y más específicamente, una
+    técnica conocida como Ingeniería de Características
+    (Feature Engineering). Esto implica crear nuevas columnas
+    o variables (características) a partir de las que ya
+    existen para enriquecer tu dataset. En este caso,
+    utilizarás la facturación mensual para calcular un valor
+    diario, lo que podría proporcionar una visión más detallada
+    del comportamiento de los clientes o ser más útil para
+    ciertos análisis o modelos.
+
+5.  Estandarización y transformación de datos (opcional):
+    Finalmente, tienes la etapa opcional pero muy recomendada
+    de "Estandarización y transformación de datos". Esto
+    también forma parte del concepto más amplio de
+    8. Transformación de Datos. Aquí puedes aplicar
+    diferentes técnicas:
+    * Estandarización de Datos: Ajustar los valores de
+      diferentes columnas para que sigan una escala común,
+      lo que puede ser importante para algunos algoritmos
+      de modelado.
+    * Codificación de Variables Categóricas: Convertir
+      valores textuales (como "Sí" y "No", o nombres de
+      categorías) en valores numéricos (por ejemplo, 1 y 0,
+      o una serie de números para múltiples categorías).
+      Esto es crucial porque muchos modelos matemáticos no
+      pueden procesar texto directamente.
+    También podrías renombrar columnas o traducir datos para
+    que la información sea más accesible y fácil de entender,
+    mejorando la claridad y comunicación de los resultados.
+
+---
+
+Conceptos de la lista que NO son pasos directos en tu
+sección de "Transformación", sino que son más amplios o
+contextuales:
+
+9.  ETL (Extract, Transform, Load): Este concepto se refiere
+    al proceso general de manejo de datos. Consiste en:
+    * Extraer: Sacar los datos de su fuente original.
+    * Transformar: Limpiar, modificar, y reestructurar los
+      datos (¡toda la sección de tu tarea en la que estamos
+      enfocados ahora es parte de esta "T"!).
+    * Cargar: Guardar los datos transformados en un nuevo
+      lugar, listos para el análisis o para alimentar
+      otros sistemas.
+    Así que, cuando realizas la limpieza y transformación,
+    estás ejecutando la fase central del proceso ETL.
+
+10. Modelos Predictivos: Estos son un objetivo posterior en
+    muchos proyectos de ciencia de datos. Son algoritmos o
+    técnicas estadísticas que se utilizan después de que los
+    datos han sido limpiados y transformados, con el fin de
+    hacer predicciones sobre resultados futuros (por ejemplo,
+    predecir qué clientes tienen una alta probabilidad de
+    cancelar su servicio). No los construirás durante esta
+    fase de transformación, pero la calidad de esta fase es
+    crucial para su éxito.
+
+11. Tasa de Cancelación de Clientes (Customer Churn): Este es
+    el problema de negocio o el contexto que motiva todo este
+    análisis. Es el "por qué" estás haciendo todo este trabajo:
+    para entender las razones por las cuales los clientes dejan
+    la empresa y, eventualmente, encontrar formas de reducir
+    esta tasa. No es un paso técnico en el procesamiento de
+    datos, sino la pregunta que intentas responder con ellos.
