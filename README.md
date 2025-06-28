@@ -1,3 +1,110 @@
+# README
+
+📊 **Proyecto Análisis de Evasión de Clientes (Churn) de Telecom X | Challenge Alura Latam**
+
+Un análisis exploratorio de datos (EDA) desarrollado como parte del Challenge de Data Science de Alura Latam. Permite comprender los factores que influyen en la evasión de clientes (churn) en una empresa de telecomunicaciones ficticia para proponer estrategias de retención.
+
+---
+
+👥 **Autor**
+
+- **Nombre:** Felipe Guillermo Guzmán De La Fuente
+- **Mail:** guzzman00@hotmail.com
+- **GitHub:** Guzzman00
+
+---
+
+📋 **Descripción del Proyecto**
+
+Este proyecto, contenido en un notebook de Jupyter (`TelecomX_LATAM.ipynb`), realiza un análisis detallado de datos de clientes simulados, obtenidos desde una API en formato JSON. El objetivo es extraer insights sobre:
+
+- El perfil demográfico y de consumo de los clientes que cancelan el servicio.
+- La influencia del tipo de contrato y método de pago en la tasa de evasión.
+- La relación entre la antigüedad del cliente, los cargos mensuales/diarios y la probabilidad de churn.
+- El impacto de la cantidad de servicios adicionales contratados en la lealtad del cliente.
+
+Finalmente, el análisis se sintetiza en un informe final con conclusiones y recomendaciones estratégicas para reducir la evasión.
+
+---
+
+⚙️ **Características Técnicas del Análisis**
+
+- **Carga de datos** desde una fuente externa (API en formato JSON).
+- **Limpieza y preprocesamiento de datos** (manejo de inconsistencias, eliminación de filas con datos vacíos).
+- **Transformación de datos** (creación de nuevas columnas como `Costo_Diario`, estandarización de variables categóricas a formato binario).
+- **Normalización de datos anidados (JSON)** utilizando `pandas.json_normalize` para aplanar la estructura y facilitar el análisis.
+- **Cálculo de métricas agregadas** (conteos, promedios, tasas de evasión por grupo).
+- **Análisis de correlación** entre variables numéricas.
+- **Visualización de datos** con `Matplotlib` y `Seaborn` (gráficos de barras, gráficos de densidad, boxplots y heatmaps).
+- **Informe final estructurado** con conclusiones y recomendaciones basadas en datos.
+
+---
+
+🛠️ **Tecnologías Utilizadas**
+
+- **Python 3**
+- **Pandas** (Manipulación y análisis de datos)
+- **Matplotlib** (Visualización de datos estática)
+- **Seaborn** (Visualización de datos estadística y estética)
+- **Jupyter Notebook / Google Colab** (Entorno de desarrollo)
+
+---
+
+✅ **Requisitos del Challenge Cumplidos**
+
+Este proyecto cumple con todos los requisitos de análisis solicitados en el challenge:
+
+1.  **Extracción de datos:** Se cargaron los datos correctamente desde la API en formato JSON.
+2.  **Limpieza de datos:** Se identificaron y trataron las inconsistencias en la columna `Churn`, eliminando filas con valores vacíos.
+3.  **Transformación y estandarización:** Se creó la columna `Cuentas_Diarias`, se estandarizó la columna `Churn` a formato binario y se normalizaron los datos JSON anidados para su análisis.
+4.  **Análisis descriptivo:** Se realizó un análisis inicial de las variables usando el método `describe()`.
+5.  **Distribución de evasión:** Se visualizó la proporción de clientes que cancelaron el servicio frente a los que no.
+6.  **Análisis por variables categóricas y numéricas:** Se crearon gráficos de barras y de densidad para comparar la distribución de la evasión según género, tipo de contrato, método de pago, antigüedad y cargos.
+7.  **Análisis de Correlación (Extra):** Se realizó la exploración opcional, creando nuevas variables como `Cantidad_Servicios` y visualizando la relación entre todas las variables numéricas mediante un heatmap.
+8.  **Informe Final:** Se elaboró una síntesis del análisis, conclusiones y recomendaciones estratégicas.
+
+---
+
+🔍 **Estructura del Proyecto (Notebook)**
+
+El notebook `TelecomX_LATAM.ipynb` está organizado en las siguientes secciones principales:
+
+- **📌 Extracción** (Carga de datos desde la API)
+- **🔧 Transformación**
+    - Conocimiento del Conjunto de Datos
+    - Comprobación y Manejo de Incoherencias
+    - Creación de Nuevas Variables y Estandarización
+- **📊 Carga y Análisis**
+    - Análisis Descriptivo
+    - Distribución de Evasión
+    - Recuento de Evasión por Variables Categóricas
+    - Conteo de Evasión por Variables Numéricas
+- **📍 ¡Extra! Análisis de Correlación** (Relación costo/evasión, impacto de cantidad de servicios, matriz de correlación)
+- **📄 Informe Final** (Síntesis, conclusiones y recomendaciones)
+
+---
+
+📦 **Guía de Instalación y Ejecución**
+
+- **Entorno:** Este notebook está diseñado para ejecutarse en **Google Colab**.
+- **Librerías:** Las librerías principales (`pandas`, `matplotlib`, `seaborn`) suelen estar preinstaladas en Colab. No se requieren instalaciones adicionales.
+- **Abrir Notebook:** Sube o abre el archivo `TelecomX_LATAM.ipynb` en Google Colab.
+- **Ejecutar Celdas:** Ejecuta las celdas de código en orden secuencial (de arriba abajo, usando **Shift+Enter** o el botón de Play). Es **crucial** ejecutar las celdas de las secciones **Extracción** y **Transformación** para que el DataFrame `df_final` esté definido y listo para los análisis posteriores.
+
+---
+
+💻 **Cómo Utilizar**
+
+- Ejecuta todas las celdas del notebook en orden para replicar el análisis completo.
+- Observa las salidas de cada celda: tablas de datos, gráficos y textos de análisis.
+- Presta especial atención a las visualizaciones para identificar patrones de comportamiento de los clientes.
+- Lee el informe final para entender las conclusiones y las estrategias de retención propuestas.
+- Puedes modificar parámetros en el código (ej. colores de gráficos, variables a analizar) y re-ejecutar para explorar variaciones.
+
+---
+
+🎨 **Vista Previa**
+
 # Informe Final: Análisis de Evasión de Clientes en Telecom X
 
 ---
